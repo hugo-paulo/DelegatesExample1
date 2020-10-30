@@ -11,8 +11,9 @@ namespace DelegatesExample1
             Console.WriteLine("Enter Length of Loop");
             loopLength = Int32.Parse(Console.ReadLine());
 
-            LoopClass loop = new LoopClass(() => { Console.WriteLine("Loop Complete !!!"); }, loopLength);
+            var loop = new LoopClass(() => { Console.WriteLine("Loop Complete !!!"); }, loopLength);
             loop.RunLoop();
+
         }
 
     }
